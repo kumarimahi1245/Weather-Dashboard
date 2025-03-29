@@ -1,12 +1,96 @@
-# React + Vite
+# Weather Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌦 Overview
+This is a React-based Weather Card component that fetches real-time weather data using the API. It displays temperature, humidity and wind speed for a given location. It also includes a dark/light mode toggle.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Fetches real-time weather data from OpenWeather API
+- Displays temperature, humidity, wind speed, and weather conditions
+- Responsive design using React 
+- Loading indicator while fetching data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Prerequisites
+Make sure you have the following installed:
+- **Node.js** (v14+ recommended)
+- **npm** or **yarn**
 
-## Expanding the ESLint configuration
+## 🛠 Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/weather-card.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd weather-card
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn install
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔑 API Key
+This project uses OpenWeather API. Get your free API key from [OpenWeather](https://openweathermap.org/api).
+
+Replace the API key in `Card.js`:
+```js
+const key = "YOUR_API_KEY";
+```
+
+## 🚀 Usage
+1. Start the development server:
+   ```sh
+   npm start
+   ```
+   or
+   ```sh
+   yarn start
+   ```
+2. Enter a city name to fetch the weather data.
+3. Toggle between light and dark mode.
+
+## 📂 File Structure
+```
+weather-card/
+│── src/
+│   │── components/
+│   │   ├── Card.js  # Main Weather Card Component
+│   │── App.js       # Root Component
+│   │── index.js     # Entry Point
+│── public/
+│── package.json
+│── README.md
+```
+
+## 🎨 Styling
+Make sure you define CSS classes for styling in an external stylesheet, e.g., `styles.css`.
+
+Example:
+```css
+.card.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.card.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+```
+
+## 🛠 Technologies Used
+- React.js
+- Axios (for API requests)
+- OpenWeather API
+- React Icons
+-
+
+## 🐞 Known Issues
+- If an invalid city name is entered, the UI may not show an error message.
+- Dark mode may not persist after page refresh.
+
+
+
