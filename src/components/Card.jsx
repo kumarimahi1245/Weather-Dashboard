@@ -50,7 +50,7 @@ const Card = ({ area }) => {
               className="mx-auto float-animation"
             />
             <p className="temperature">{place.main?.temp ?? "N/A"}°C</p>
-            <p className="condition">{place.weather[0]?.main??"N/A"}</p>
+           
             <p className="location">{place.name}</p>
           </div>
 
