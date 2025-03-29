@@ -1,0 +1,144 @@
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #fff; */
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transform: scale(1.05);
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    background: transparent;
+}
+
+.search-icon {
+    color: #2f4680;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#btn{
+    border: none;
+    background: none;
+}
+
+.weather-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-icon {
+    font-size: 64px;
+    color: #ffffff;
+    animation: float 2s ease-in-out infinite;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.location {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+    font-size: 50px;
+}
+
+.condition{
+    color: white;
+    font-family:"Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .float-animation {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+
+.weather-data{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: #fff;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.col-hover{
+    transform: scale(1.05);
+}
+
+.humidity-icon,.wind-icon{
+    font-size: 36px;
+    color: #e0e0e0;
+}
+
+.col p{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.col span{
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
